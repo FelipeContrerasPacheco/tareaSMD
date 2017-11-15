@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+     <link rel="stylesheet" href="css/framework7-icons.css">
+      <link rel="stylesheet" href="path/to/framework7.ios.min.css">
+    <!-- It should be included After main Framework7 styles -->
+    <link rel="stylesheet" href="path/to/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="path/to/framework7.material.min.css">
+    <!-- It should be included After main Framework7 styles -->
+    <link rel="stylesheet" href="path/to/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!-- Path to your custom app styles-->
+ 
+  </head>
+
+  <body class="theme-orange" >
+   
+
+<!-- First, we need to add Panel's overlay that will overlays app while panel is opened -->
+<div class="panel-overlay"></div>
+ 
+    <!-- Left panel, let it be with reveal effect -->
+       
+      
+<div class="panel panel-left panel-reveal">
+        
+
+        <div class="list-block">
+
+         <ul>
+
+
+    <h3><i class="f7-icons"></i>MENU</h3>
+  <ul>
+    <li>
+      <align="right" a href="#" class="item-link list-button">Invitar Amigos</a>
+    </li>
+    <li>
+      <a href="#" class="item-link list-button">Galeria</a>
+    </li>
+    <li>
+      <a href="#" class="item-link list-button">Notificaciones</a>
+    </li>
+  </ul>
+    <h3><i class="f7-icons"></i>CONFIGURACION</h3>
+    <ul>
+      <li>
+      <a href="#" class="item-link list-button">Cambiar Idioma</a>
+    </li>
+    <li>
+      <a href="#" class="item-link list-button">Problema</a>
+    </li>
+    <li>
+      <a href="#" class="item-link list-button">Sobre Nosotros</a>
+    </li>
+    <li>
+      <a href="#" class="item-link list-button">Cerrar Sección</a>
+    </li>
+    </ul>
+         
+<style>
+#imagen {
+   
+max-width: 40%;
+height: 20px;
+margin: 20px;
+padding: 5px;
+display: block;
+margin: auto;
+}
+.centrar-imagen {
+text-align: center;
+}
+
+</style>
+          <div class="centrar-imagen">
+         <img src="img/PortalNews.png" width="270px" style="transform: rotate (-90deg);"/>
+        
+           <!-- Inset content block 
+          </div>
+        <p>Breaking news es una aplicacion de noticias que suceden a diario en la Ciudad de Chillán,ademas da la opción de escribir tu propio articulo de noticias sacando una foto de la noticia en transcurso, escribir una pequeña reseña y obtener la geolocalización, ademas se pueden revisar noticias por temas y visualizar las noticias antiguas</p>
+      </div>
+    -->
+    </div>
+
+         </ul>
+         </div>
+     </div>
+    <!-- Right panel, with cover effect -->
+   <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+ 
+            <!-- Top Navbar. In Material theme it should be inside of the page-->
+            <div class="navbar theme-black">
+              <div class="navbar-inner">
+                 <div class="left"> 
+                   <a class="link open-panel" data-panel="left">
+                    <i class="f7-icons">menu</i>
+                  </a>
+                 </div>
+                <div class="center"><img src="img/PortalNews.png" width="250px" style="transform: rotate (-90deg);"/></div>
+              </div>
+            </div>
+       
+<div class="toolbar">
+<p class="buttons-row ">
+  <a href="#" class="button button-big"> <i class="f7-icons " >camera_fill</i></a>
+  
+</p>
+</div>
+            <!-- BOTON FLOTANTE-->
+  <div class="speed-dial theme-lightblue ">
+    <!-- FAB inside will open Speed Dial actions -->
+    <a href="#" class="floating-button">
+      <!-- First icon is visible when Speed Dial actions are closed -->
+      <i class="f7-icons">favorites</i>
+      <!-- Second icon is visible when Speed Dial actions are opened -->
+      <i class="f7-icons">down</i>
+    </a>
+    <!-- Speed Dial Actions -->
+    <div class="speed-dial-buttons">
+      <!-- First Speed Dial button -->
+      <a href="#">
+        <i class="f7-icons">phone</i>
+      </a>
+      <!-- Second Speed Dial  button -->
+      <a href="#">
+        <i class="f7-icons">search</i>
+      </a>
+      <!-- Third Speed Dial  button -->
+      <a href="#">
+        <i class="f7-icons">star</i>
+      </a>
+    </div>
+  </div>
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              
+<style>
+  .facebook-card .card-header {
+    display: block;
+    padding: 10px;
+  }
+  .facebook-card .facebook-avatar {
+    float: left;
+  }
+  .facebook-card .facebook-name {
+    margin-left: 44px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .facebook-card .facebook-date {
+    margin-left: 44px;
+    font-size: 13px;
+    color: #8e8e93;
+  }
+  .facebook-card .card-footer {
+    background: #fafafa;
+  }
+  .facebook-card .card-footer a {
+    color: #81848b;
+    font-weight: 500;
+  }
+  .facebook-card .card-content img {
+    display: block;
+  }
+  .facebook-card .card-content-inner {
+    padding: 15px 10px;
+  }  
+  . .card-content-inner {
+    padding: 15px 10px;
+  }  
+  
+</style>
+ 
+<h3>Noticias</h3>
+ 
+<div class="card facebook-card">
+  <div class="card-header theme-black">
+    <div class="facebook-avatar"><img src="img/descarga.jpg" width="34" height="34"></div>
+    <div class="facebook-name">Camila morales</div>
+    <div class="facebook-date">Miercoles a las 11:00 AM</div>
+    <div class="facebook-date">Cultura</div>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>GG </p>
+       <div class="swiper-container swiper-1">
+       <div id="contenido" class="swiper-pagination" ></div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="img/paisajes.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes2.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes3.jpg" width="370" height="150"></div>
+       </div>
+    </div>
+    <p class="color-gray">   Comentarios: 20</p>
+  </div>
+  <div class="card-footer">
+    <p><a href="#" data-picker=".picker-1" class="open-picker">Comentar</a></p>
+    <div class="picker-modal picker-1">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="close-picker">Enviar</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Comentario</h3>
+        <p>Hola Mundo</p>
+      </div>
+    </div>
+  </div>
+  <p><a href="#" data-picker=".picker-2" class="open-picker">Ubicacion</a></p>
+    <div class="picker-modal picker-2">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="right"></div>
+        <div class="right"> <a href="#" class="close-picker">Atras</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Ubicacion De La Noticia</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="card facebook-card">
+  <div class="card-header theme-black">
+    <div class="facebook-avatar"><img src="img/descarga.jpg" width="34" height="34"></div>
+    <div class="facebook-name">Camila morales</div>
+    <div class="facebook-date">Miercoles a las 11:00 AM</div>
+    <div class="facebook-date">Cultura</div>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>GG </p>
+       <div class="swiper-container swiper-1">
+       <div id="contenido" class="swiper-pagination" ></div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="img/paisajes.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes2.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes3.jpg" width="370" height="150"></div>
+       </div>
+    </div>
+    <p class="color-gray">   Comentarios: 20</p>
+  </div>
+  <div class="card-footer">
+    <p><a href="#" data-picker=".picker-1" class="open-picker">Comentar</a></p>
+    <div class="picker-modal picker-1">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="close-picker">Enviar</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Comentario</h3>
+        <p>Hola Mundo</p>
+      </div>
+    </div>
+  </div>
+  <p><a href="#" data-picker=".picker-2" class="open-picker">Ubicacion</a></p>
+    <div class="picker-modal picker-2">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="right"></div>
+        <div class="right"><a href="#" class="close-picker">Atras</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Ubicacion De La Noticia</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="card facebook-card">
+  <div class="card-header theme-black">
+    <div class="facebook-avatar"><img src="img/descarga.jpg" width="34" height="34"></div>
+    <div class="facebook-name">Camila morales</div>
+    <div class="facebook-date">Miercoles a las 11:00 AM</div>
+    <div class="facebook-date">Cultura</div>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>GG </p>
+       <div class="swiper-container swiper-1">
+       <div id="contenido" class="swiper-pagination" ></div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="img/paisajes.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes2.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes3.jpg" width="370" height="150"></div>
+       </div>
+    </div>
+    <p class="color-gray">   Comentarios: 20</p>
+  </div>
+  <div class="card-footer">
+    <p><a href="#" data-picker=".picker-1" class="open-picker">Comentar</a></p>
+    <div class="picker-modal picker-1">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="close-picker">Enviar</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Comentario</h3>
+        <p>Hola Mundo</p>
+      </div>
+    </div>
+  </div>
+  <p><a href="#" data-picker=".picker-2" class="open-picker">Ubicacion</a></p>
+    <div class="picker-modal picker-2">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="right"></div>
+        <div class="right"><a href="#" class="close-picker">Atras</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Ubicacion De La Noticia</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="card facebook-card">
+  <div class="card-header theme-black">
+    <div class="facebook-avatar"><img src="img/descarga.jpg" width="34" height="34"></div>
+    <div class="facebook-name">Camila morales</div>
+    <div class="facebook-date">Miercoles a las 11:00 AM</div>
+    <div class="facebook-date">Cultura</div>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>GG </p>
+       <div class="swiper-container swiper-1">
+       <div id="contenido" class="swiper-pagination" ></div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="img/paisajes.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes2.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes3.jpg" width="370" height="150"></div>
+       </div>
+    </div>
+    <p class="color-gray">   Comentarios: 20</p>
+  </div>
+  <div class="card-footer">
+    <p><a href="#" data-picker=".picker-1" class="open-picker">Comentar</a></p>
+    <div class="picker-modal picker-1">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="close-picker">Enviar</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Comentario</h3>
+        <p>Hola Mundo</p>
+      </div>
+    </div>
+  </div>
+  <p><a href="#" data-picker=".picker-2" class="open-picker">Ubicacion</a></p>
+    <div class="picker-modal picker-2">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="right"></div>
+        <div class="right"><a href="#" class="close-picker">Atras</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Ubicacion De La Noticia</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="card facebook-card">
+  <div class="card-header theme-black">
+    <div class="facebook-avatar"><img src="img/descarga.jpg" width="34" height="34"></div>
+    <div class="facebook-name">Camila morales</div>
+    <div class="facebook-date">Miercoles a las 11:00 AM</div>
+    <div class="facebook-date">Cultura</div>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>GG </p>
+       <div class="swiper-container swiper-1">
+       <div id="contenido" class="swiper-pagination" ></div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="img/paisajes.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes2.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes3.jpg" width="370" height="150"></div>
+       </div>
+    </div>
+    <p class="color-gray">   Comentarios: 20</p>
+  </div>
+  <div class="card-footer">
+    <p><a href="#" data-picker=".picker-1" class="open-picker">Comentar</a></p>
+    <div class="picker-modal picker-1">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="close-picker">Enviar</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Comentario</h3>
+        <p>Hola Mundo</p>
+      </div>
+    </div>
+  </div>
+  <p><a href="#" data-picker=".picker-2" class="open-picker">Ubicacion</a></p>
+    <div class="picker-modal picker-2">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="right"></div>
+        <div class="right"><a href="#" class="close-picker">Atras</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Ubicacion De La Noticia</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="card facebook-card">
+  <div class="card-header theme-black">
+    <div class="facebook-avatar"><img src="img/descarga.jpg" width="34" height="34"></div>
+    <div class="facebook-name">Camila morales</div>
+    <div class="facebook-date">Miercoles a las 11:00 AM</div>
+    <div class="facebook-date">Cultura</div>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>GG </p>
+       <div class="swiper-container swiper-1">
+       <div id="contenido" class="swiper-pagination" ></div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="img/paisajes.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes2.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes3.jpg" width="370" height="150"></div>
+       </div>
+    </div>
+    <p class="color-gray">   Comentarios: 20</p>
+  </div>
+  <div class="card-footer">
+    <p><a href="#" data-picker=".picker-1" class="open-picker">Comentar</a></p>
+    <div class="picker-modal picker-1">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="close-picker">Enviar</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Comentario</h3>
+        <p>Hola Mundo</p>
+      </div>
+    </div>
+  </div>
+  <p><a href="#" data-picker=".picker-2" class="open-picker">Ubicacion</a></p>
+    <div class="picker-modal picker-2">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="right"></div>
+        <div class="right"><a href="#" class="close-picker">Atras</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Ubicacion De La Noticia</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="card facebook-card">
+  <div class="card-header theme-black">
+    <div class="facebook-avatar"><img src="img/descarga.jpg" width="34" height="34"></div>
+    <div class="facebook-name">Camila morales</div>
+    <div class="facebook-date">Miercoles a las 11:00 AM</div>
+    <div class="facebook-date">Cultura</div>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>GG </p>
+       <div class="swiper-container swiper-1">
+       <div id="contenido" class="swiper-pagination" ></div>
+       <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="img/paisajes.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes2.jpg" width="370" height="150"></div>
+           <div class="swiper-slide"><img src="img/paisajes3.jpg" width="370" height="150"></div>
+       </div>
+    </div>
+    <p class="color-gray">   Comentarios: 20</p>
+  </div>
+  <div class="card-footer">
+    <p><a href="#" data-picker=".picker-1" class="open-picker">Comentar</a></p>
+    <div class="picker-modal picker-1">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="close-picker">Enviar</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Comentario</h3>
+        <p>Hola Mundo</p>
+      </div>
+    </div>
+  </div>
+  <p><a href="#" data-picker=".picker-2" class="open-picker">Ubicacion</a></p>
+    <div class="picker-modal picker-2">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="right"></div>
+        <div class="right"><a href="#" class="close-picker">Atras</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="content-block">
+        <h3>Ubicacion De La Noticia</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+
+      
+              <!-- Link to another page -->
+                
+            </div>
+ 
+
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+
+    <!-- Path to Framework7 Library JS-->
+  
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app1.js"></script>
+  </body>
+</html> 
